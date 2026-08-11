@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Comercial | Summit Soluções Automotivas & Onira Labs</title>
+    <meta name="description" content="Proposta comercial para a Summit Soluções Automotivas: site próprio com feed do Instagram integrado por R$ 1.200,00 (R$ 800 em dinheiro + R$ 400 em permuta).">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        @font-face {
+            font-family: 'Oswald';
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+            src: url('assets/fonts/oswald-700.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'IBM Plex Mono';
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+            src: url('assets/fonts/plexmono-500.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'IBM Plex Sans';
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+            src: url('assets/fonts/plexsans-400.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'IBM Plex Sans';
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+            src: url('assets/fonts/plexsans-600.woff2') format('woff2');
+        }
+
+        :root {
+            --bg-page: #16181B;
+            --bg-card: #1E2124;
+            --bg-card-2: #23262A;
+            --text-dark: #ECE9E2;
+            --text-main: #C7C4BD;
+            --text-muted: #8B9096;
+
+            --primary: #FF7A00;
+            --primary-hover: #FF8F1F;
+            --primary-light: rgba(255, 122, 0, 0.12);
+            --primary-ink: #16181B;
+            --green: #3FB65F;
+            --green-light: rgba(63, 182, 95, 0.1);
+
+            --border: #34383D;
+            --font-display: 'Oswald', 'Arial Narrow', sans-serif;
+            --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+            --font-body: 'IBM Plex Sans', -apple-system, sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            font-family: var(--font-body);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container { width: 100%; max-width: 760px; margin: 0 auto; padding: 0 16px; }
+
+        .proposal-nav {
+            background: var(--bg-page);
+            border-bottom: 1px solid var(--border);
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper { display: flex; align-items: center; justify-content: space-between; }
+
+        .brand-logo-link {
+            display: flex; align-items: center; gap: 10px;
+            text-decoration: none; color: var(--text-dark);
+        }
+        .brand-logo-link img { height: 38px; width: auto; }
+
+        .back-link {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 8px 16px; background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 2px; color: var(--text-dark);
+            font-family: var(--font-mono); font-size: 0.78rem; font-weight: 500;
+            text-transform: uppercase; letter-spacing: 0.03em;
+            text-decoration: none; transition: all 0.2s;
+        }
+        .back-link:hover { border-color: var(--primary); color: var(--primary); }
+
+        .offer-hero { padding: 28px 0 20px 0; }
+
+        .offer-card-main {
+            background: var(--bg-card);
+            color: #fff; border: 1px solid var(--border); border-left: 3px solid var(--primary);
+            border-radius: 2px; padding: 40px 32px;
+        }
+
+        .offer-badge {
+            display: inline-block; padding: 6px 14px;
+            background: var(--primary-light); border: 1px solid var(--primary);
+            border-radius: 2px; color: var(--primary);
+            font-family: var(--font-mono);
+            font-size: 0.72rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em;
+            margin-bottom: 18px;
+        }
+
+        .offer-title {
+            font-family: var(--font-display); font-size: 2.1rem; font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1.2; color: #fff; margin-bottom: 14px;
+        }
+        .offer-title span { color: var(--primary); }
+        .offer-desc { font-size: 1.02rem; color: var(--text-muted); max-width: 600px; line-height: 1.6; }
+
+        .section-card {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 2px; padding: 28px; margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-family: var(--font-display); text-transform: uppercase;
+            font-size: 1.2rem; font-weight: 700;
+            color: var(--text-dark); margin-bottom: 20px;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .section-title i { color: var(--primary); width: 20px; height: 20px; }
+
+        .domain-strip {
+            background: var(--green-light); border: 1px solid rgba(63, 182, 95, 0.3);
+            border-radius: 2px; padding: 18px 24px;
+            display: flex; align-items: center; justify-content: space-between; gap: 16px;
+            margin-bottom: 24px;
+        }
+        .domain-name { font-family: var(--font-mono); font-size: 1.15rem; font-weight: 500; color: #fff; }
+        .domain-status {
+            display: inline-flex; align-items: center; gap: 6px;
+            color: var(--green); font-family: var(--font-mono); font-weight: 500; font-size: 0.85rem;
+            text-transform: uppercase; letter-spacing: 0.03em;
+        }
+        .domain-status i { width: 17px; height: 17px; }
+
+        .numbers-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 10px; }
+        .num-card { background: var(--bg-card-2); padding: 20px; }
+        .num-big { font-family: var(--font-mono); font-size: 1.7rem; font-weight: 500; color: var(--primary); line-height: 1; margin-bottom: 8px; }
+        .num-title { font-family: var(--font-display); text-transform: uppercase; font-size: 0.95rem; font-weight: 700; color: var(--text-dark); margin-bottom: 6px; }
+        .num-text { font-size: 0.86rem; color: var(--text-muted); line-height: 1.45; }
+
+        .financial-split { display: grid; grid-template-columns: 1.3fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); }
+        .fin-box-main { background: var(--bg-card-2); padding: 24px; }
+        .fin-label { font-family: var(--font-mono); font-size: 0.74rem; font-weight: 500; color: var(--primary); text-transform: uppercase; letter-spacing: 0.06em; }
+        .fin-total { font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: #fff; margin: 6px 0 14px 0; }
+        .fin-item { font-size: 0.9rem; color: var(--text-dark); padding-top: 10px; border-top: 1px solid var(--border); margin-top: 10px; line-height: 1.5; }
+
+        .fin-box-sub { background: var(--bg-card-2); padding: 24px; display: flex; flex-direction: column; justify-content: center; }
+        .fin-sub-val { font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: #fff; margin: 4px 0; }
+
+        .dev-bar { background: var(--bg-card); border: 1px solid var(--border); border-radius: 2px; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
+        .dev-info { display: flex; align-items: center; gap: 14px; }
+        .dev-avatar { width: 42px; height: 42px; border-radius: 2px; background: var(--bg-card-2); border: 1px solid var(--border); color: var(--primary); font-family: var(--font-mono); font-weight: 500; display: flex; align-items: center; justify-content: center; font-size: 1rem; }
+        .dev-text h4 { font-family: var(--font-display); text-transform: uppercase; font-size: 1rem; font-weight: 700; color: var(--text-dark); }
+        .dev-text p { font-size: 0.84rem; color: var(--text-muted); }
+
+        .dev-links { display: flex; gap: 10px; }
+        .btn-dev-link { padding: 8px 16px; border-radius: 2px; background: var(--bg-card-2); border: 1px solid var(--border); color: var(--text-dark); font-family: var(--font-mono); font-size: 0.78rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.02em; text-decoration: none; transition: all 0.2s; }
+        .btn-dev-link:hover { border-color: var(--primary); color: var(--primary); }
+
+        .cta-box { background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid var(--primary); color: #fff; border-radius: 2px; padding: 36px 24px; text-align: center; margin-bottom: 30px; }
+        .cta-box h3 { font-family: var(--font-display); text-transform: uppercase; font-size: 1.4rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+        .cta-box p { font-size: 0.96rem; color: var(--text-muted); margin-bottom: 24px; max-width: 520px; margin-left: auto; margin-right: auto; }
+
+        .btn-wa-action {
+            display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+            padding: 18px 32px; background: #25D366; color: #08150D;
+            border-radius: 2px;
+            clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
+            font-family: var(--font-mono); font-weight: 500; font-size: 1rem;
+            text-transform: uppercase; letter-spacing: 0.03em;
+            text-decoration: none; transition: all 0.2s; width: 100%;
+        }
+        .btn-wa-action:hover { background: #1EBE57; }
+
+        .note-strip { font-family: var(--font-mono); font-size: 0.76rem; color: var(--text-muted); text-align: center; padding-bottom: 30px; }
+
+        @media (max-width: 640px) {
+            .offer-title { font-size: 1.6rem; }
+            .domain-strip { flex-direction: column; align-items: flex-start; }
+            .numbers-grid, .financial-split { grid-template-columns: 1fr; }
+            .dev-bar { flex-direction: column; align-items: flex-start; }
+            .dev-links { width: 100%; }
+            .btn-dev-link { flex: 1; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="proposal-nav">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="brand-logo-link">
+                <img src="assets/logo.svg" alt="Summit Soluções Automotivas">
+            </a>
+            <a href="index.html" class="back-link">
+                <i data-lucide="arrow-left"></i> Ver Site Modelo
+            </a>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <section class="offer-hero">
+            <div class="offer-card-main">
+                <span class="offer-badge">Proposta de Parceria Digital · Onira Labs</span>
+                <h1 class="offer-title">Site próprio para a Summit por <span>R$ 1.200,00</span> + permuta</h1>
+                <p class="offer-desc">Site institucional com feed do Instagram integrado, WhatsApp em todas as seções e estrutura pronta para publicar no domínio que a Summit já possui.</p>
+            </div>
+        </section>
+
+        <div class="domain-strip">
+            <div>
+                <div class="domain-name">summitacessorios.com.br</div>
+                <div style="font-size:0.86rem; color:var(--text-muted); margin-top:2px;">Domínio já registrado pela Summit — sem custo adicional, só apontar o DNS</div>
+            </div>
+            <div class="domain-status"><i data-lucide="check-circle-2"></i> Já é seu</div>
+        </div>
+
+        <section class="section-card">
+            <h2 class="section-title"><i data-lucide="trending-up"></i> Por que sair do Instagram-como-site?</h2>
+
+            <div class="numbers-grid">
+                <div class="num-card">
+                    <div class="num-big">R$ 0</div>
+                    <div class="num-title">Custo de Hospedagem</div>
+                    <div class="num-text">Hospedado no GitHub Pages, sem mensalidade de servidor — o domínio já é seu, o resto é gratuito.</div>
+                </div>
+                <div class="num-card">
+                    <div class="num-big">22 anos</div>
+                    <div class="num-title">Experiência em Destaque</div>
+                    <div class="num-text">Hoje isso vive só na bio do Instagram. No site, vira a primeira coisa que quem busca no Google enxerga.</div>
+                </div>
+                <div class="num-card">
+                    <div class="num-big">Feed ao Vivo</div>
+                    <div class="num-title">Instagram Integrado</div>
+                    <div class="num-text">Espaço pronto para puxar as últimas fotos direto do @summitacessorios, sem precisar sair do site.</div>
+                </div>
+                <div class="num-card">
+                    <div class="num-big">100%</div>
+                    <div class="num-title">Pronto para Ativar</div>
+                    <div class="num-text">Estrutura de código, textos e layout já montados — falta só apontar o DNS do domínio.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-card">
+            <h2 class="section-title"><i data-lucide="calculator"></i> Valores & Modelo de Permuta</h2>
+
+            <div class="financial-split">
+                <div class="fin-box-main">
+                    <span class="fin-label">Desenvolvimento do Site</span>
+                    <div class="fin-total">R$ 1.200,00</div>
+                    <div class="fin-item">
+                        💵 <strong>R$ 800,00 Financeiro:</strong> 50% na aprovação + 50% na entrega (ou parcelado no cartão).
+                    </div>
+                    <div class="fin-item">
+                        🚗 <strong>R$ 400,00 em Permuta:</strong> serviço automotivo à combinar (ex: película ou instalação) para a equipe Onira Labs.
+                    </div>
+                </div>
+
+                <div class="fin-box-sub">
+                    <span class="fin-label" style="color:var(--text-muted);">Manutenção Mensal</span>
+                    <div class="fin-sub-val">R$ 40,00 <span style="font-size:0.85rem; font-weight:400; font-family:var(--font-body);">/mês</span></div>
+                    <p style="font-size:0.82rem; color:var(--text-muted);">Pequenos ajustes de texto/preço, suporte ao widget do Instagram e certificado SSL. Hospedagem em si é gratuita.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="dev-bar">
+            <div class="dev-info">
+                <div class="dev-avatar">JM</div>
+                <div class="dev-text">
+                    <h4>Jeff Motta · Onira Labs</h4>
+                    <p>Desenvolvimento Web & Estratégia Digital</p>
+                </div>
+            </div>
+            <div class="dev-links">
+                <a href="https://jeffmotta.framer.website/" target="_blank" class="btn-dev-link">Portfólio</a>
+                <a href="https://www.linkedin.com/in/jeff-motta/" target="_blank" class="btn-dev-link">LinkedIn</a>
+            </div>
+        </div>
+
+        <section class="cta-box">
+            <h3>Colocar o site da Summit no ar</h3>
+            <p>Clique abaixo para falar direto com o Jeff no WhatsApp e combinar a ativação.</p>
+            <a href="https://wa.me/5554996862169?text=Ol%C3%A1%20Jeff!%20Vi%20a%20proposta%20do%20site%20da%20Summit%20(R%24%201.200%20%2B%20permuta)%20e%20quero%20conversar." target="_blank" class="btn-wa-action">
+                <i data-lucide="send"></i>
+                <span>Falar no WhatsApp (54) 99686-2169</span>
+            </a>
+        </section>
+
+        <p class="note-strip">Valores de referência para avaliação interna — ajustar antes de enviar à Summit.</p>
+
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

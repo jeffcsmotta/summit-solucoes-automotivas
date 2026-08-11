@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 300" role="img" aria-label="Summit Soluções Automotivas">
+  <defs>
+    <style>
+      .sm-car { fill: none; stroke: #ECE9E2; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .sm-accent { fill: none; stroke: #FF7A00; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .sm-ground { stroke: #ECE9E2; stroke-width: 3; }
+      .sm-word { font-family: 'Oswald', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 74px; letter-spacing: 2px; }
+      .sm-white { fill: #ECE9E2; }
+      .sm-orange { fill: #FF7A00; }
+      .sm-sub { font-family: 'IBM Plex Mono', 'Courier New', monospace; font-weight: 500; font-size: 20px; letter-spacing: 6px; fill: #FF7A00; }
+    </style>
+  </defs>
+
+  <!-- car silhouette -->
+  <path class="sm-car" d="M60,146
+    C78,146 92,138 104,120
+    C124,90 158,64 200,54
+    C232,46 270,50 300,66
+    C322,50 352,42 384,44
+    C420,46 452,60 470,84
+    C486,104 500,118 524,122
+    L556,126
+    C562,127 566,131 566,137
+    C566,143 561,148 555,148
+    L520,150" />
+  <path class="sm-car" d="M60,146 L60,158 C60,162 63,165 67,165 L100,165" />
+  <path class="sm-car" d="M100,165 C104,140 124,122 148,122 C172,122 192,140 196,165" />
+  <path class="sm-car" d="M330,165 C334,140 354,122 378,122 C402,122 422,140 426,165" />
+  <path class="sm-car" d="M196,165 L330,165" />
+  <path class="sm-car" d="M426,165 L520,165 C528,165 534,159 534,151 L534,150" />
+  <path class="sm-accent" d="M76,140 L92,132" />
+  <path class="sm-accent" d="M540,132 C548,132 554,136 554,140 C554,144 548,148 540,146" />
+  <circle class="sm-car" cx="148" cy="165" r="18" />
+  <circle class="sm-car" cx="378" cy="165" r="18" />
+
+  <!-- ground line -->
+  <line class="sm-ground" x1="30" y1="188" x2="590" y2="188" />
+
+  <!-- wordmark -->
+  <text x="310" y="252" text-anchor="middle" class="sm-word">
+    <tspan class="sm-white">SU</tspan><tspan class="sm-orange">MM</tspan><tspan class="sm-white">IT</tspan>
+  </text>
+
+  <!-- subtitle -->
+  <text x="310" y="278" text-anchor="middle" class="sm-sub">SOLUÇÕES AUTOMOTIVAS</text>
+</svg>
