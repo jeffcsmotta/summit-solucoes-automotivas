@@ -1,4 +1,24 @@
+function updateStoreStatus() {
+    const el = document.getElementById('store-status');
+    if (!el) return;
+
+    const now = new Date();
+    const day = now.getDay(); // 0 = domingo, 6 = sábado
+    const minutes = now.getHours() * 60 + now.getMinutes();
+
+    const isWeekday = day >= 1 && day <= 5;
+    const isMorning = minutes >= (8 * 60) && minutes < (12 * 60);
+    const isAfternoon = minutes >= (13 * 60 + 30) && minutes < (18 * 60);
+    const isOpen = isWeekday && (isMorning || isAfternoon);
+
+    el.innerHTML = '<i class="status-dot"></i> ' + (isOpen ? 'Aberto agora' : 'Fechado agora');
+    el.classList.toggle('is-open', isOpen);
+    el.classList.toggle('is-closed', !isOpen);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    updateStoreStatus();
+
     const heroVideo = document.getElementById('hero-video');
     if (heroVideo && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         heroVideo.pause();

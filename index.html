@@ -16,7 +16,7 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -25,10 +25,7 @@
         <div class="container top-bar-content">
             <div class="top-info">
                 <span><i data-lucide="map-pin"></i> Rua Pedro Tomasi, 1343 - Exposição, Caxias do Sul</span>
-                <span class="divider">|</span>
-                <span><i data-lucide="clock"></i> Seg a Sex: 8h-12h e 13h30-18h</span>
-                <span class="divider">|</span>
-                <span><i data-lucide="badge-check"></i> Autorizado FilmStarus</span>
+                <span class="store-status" id="store-status"><i class="status-dot"></i> Verificando horário…</span>
             </div>
             <div class="top-contacts">
                 <a href="https://wa.me/5554991735774" target="_blank">
@@ -76,7 +73,7 @@
         </video>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <span class="hero-badge"><i data-lucide="award"></i> 22 Anos de Experiência · Autorizado FilmStarus</span>
+            <span class="hero-badge"><i data-lucide="award"></i> 22 Anos de Experiência</span>
             <h1 class="hero-title">
                 A solução completa <span class="highlight">para o seu carro</span>, em Caxias do Sul
             </h1>
@@ -95,14 +92,12 @@
                 </a>
             </div>
 
+            <p class="hero-authorized"><i data-lucide="badge-check"></i> Autorizado FilmStarus</p>
+
             <div class="trust-strip">
                 <div class="trust-item">
                     <i data-lucide="calendar-check"></i>
                     <div><strong>22 anos</strong>de experiência no mercado</div>
-                </div>
-                <div class="trust-item">
-                    <i data-lucide="badge-check"></i>
-                    <div><strong>Autorizado</strong>revenda oficial FilmStarus</div>
                 </div>
                 <div class="trust-item">
                     <i data-lucide="users"></i>
@@ -365,7 +360,7 @@
         </svg>
     </a>
 
-    <script src="app.js"></script>
+    <script src="app.js?v=3"></script>
     <script>
         lucide.createIcons();
     </script>
