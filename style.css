@@ -52,12 +52,15 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+html { overflow-x: hidden; }
+
 body {
     background: var(--bg);
     color: var(--text);
     font-family: var(--font-body);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 
 img { max-width: 100%; display: block; }
@@ -220,10 +223,6 @@ a { color: inherit; }
 .hero-content {
     position: relative;
     z-index: 2;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .hero-video-bg { display: none; }
 }
 
 .hero-badge {
@@ -634,12 +633,33 @@ a { color: inherit; }
     .about-grid, .contact-grid { grid-template-columns: 1fr; }
     .footer-container { grid-template-columns: 1fr; gap: 28px; }
     .ig-grid { grid-template-columns: repeat(3, 1fr); }
-    .top-info span:nth-child(3) { display: none; }
+    .top-info span:nth-child(2), .top-info span:nth-child(3) { display: none; }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 640px) {
+    .container { padding: 0 16px; }
+
+    .top-bar-content { justify-content: center; gap: 8px 14px; }
+    .top-contacts { gap: 12px; }
+
+    .header-container { padding: 10px 16px; gap: 8px; }
+    .brand-logo-img { height: 34px; }
+    .header-actions { gap: 8px; }
+    .header-actions .btn-whatsapp span { display: none; }
+    .header-actions .btn-whatsapp { padding: 10px; }
+    .nav-toggle { padding: 8px; }
+
+    .hero { padding: 52px 0 40px; }
+    .hero-badge { font-size: 0.66rem; padding: 6px 11px; }
+    .hero-title { font-size: 1.6rem; }
+    .hero-description { font-size: 0.95rem; }
+    .hero-buttons .btn { flex: 1 1 auto; }
+    .trust-strip { gap: 18px 26px; }
+
     .services-grid { grid-template-columns: 1fr; }
-    .hero-title { font-size: 1.9rem; }
-    .trust-strip { gap: 22px; }
-    .prop-banner-card { flex-direction: column; text-align: left; border-left: none; border-top: 3px solid var(--primary); }
+    .ig-grid { grid-template-columns: repeat(2, 1fr); }
+
+    .prop-banner-card { flex-direction: column; text-align: left; border-left: none; border-top: 3px solid var(--primary); padding: 28px 22px; }
+    .floating-wa { width: 48px; height: 48px; bottom: 14px; right: 14px; }
+    .floating-wa svg { width: 22px; height: 22px; }
 }
