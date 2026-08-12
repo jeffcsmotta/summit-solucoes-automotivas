@@ -16,7 +16,7 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
@@ -24,8 +24,7 @@
     <div class="top-bar">
         <div class="container top-bar-content">
             <div class="top-info">
-                <span><i data-lucide="map-pin"></i> Rua Pedro Tomasi, 1343 - Exposição, Caxias do Sul</span>
-                <span class="store-status" id="store-status"><i class="status-dot"></i> Verificando horário…</span>
+                <a href="#contato" class="top-address"><i data-lucide="map-pin"></i> Rua Pedro Tomasi, 1343 - Exposição, Caxias do Sul</a>
             </div>
             <div class="top-contacts">
                 <a href="https://wa.me/5554991735774" target="_blank">
@@ -73,7 +72,11 @@
         </video>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <span class="hero-badge"><i data-lucide="award"></i> 22 Anos de Experiência</span>
+            <span class="hero-badge">
+                <span class="hb-item"><i data-lucide="award"></i> 22 Anos de Experiência</span>
+                <span class="hb-divider"></span>
+                <span class="hb-item store-status" id="store-status"><i class="status-dot"></i> Verificando horário…</span>
+            </span>
             <h1 class="hero-title">
                 A solução completa <span class="highlight">para o seu carro</span>, em Caxias do Sul
             </h1>

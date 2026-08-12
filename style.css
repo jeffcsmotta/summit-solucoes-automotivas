@@ -54,6 +54,12 @@
 
 html { overflow-x: hidden; }
 
+html { scroll-padding-top: 84px; }
+
+@media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+}
+
 body {
     background: var(--bg);
     color: var(--text);
@@ -137,8 +143,17 @@ a { color: inherit; }
 }
 
 .top-info { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-.top-info span { display: inline-flex; align-items: center; gap: 6px; }
 .top-info i { width: 13px; height: 13px; color: var(--primary); }
+
+.top-address {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 6px;
+    text-decoration: none;
+    color: inherit;
+}
+.top-address:hover { color: var(--primary); }
+.top-address i { margin-top: 1px; flex-shrink: 0; }
 
 .store-status { gap: 7px !important; }
 .status-dot {
@@ -252,6 +267,8 @@ a { color: inherit; }
     margin-bottom: 24px;
 }
 .hero-badge i { width: 13px; height: 13px; }
+.hero-badge .hb-item { display: inline-flex; align-items: center; gap: 6px; }
+.hero-badge .hb-divider { width: 1px; height: 11px; background: var(--border); }
 
 .hero-title {
     font-family: var(--font-display);
