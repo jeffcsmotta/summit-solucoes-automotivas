@@ -154,7 +154,7 @@ a { color: inherit; }
 .top-contacts { display: flex; align-items: center; gap: 16px; }
 .top-contacts a { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--text-muted); }
 .top-contacts a:hover { color: var(--primary); }
-.top-contacts i { width: 14px; height: 14px; }
+.top-contacts i, .top-contacts svg { width: 14px; height: 14px; }
 
 /* Header */
 .header {
@@ -460,7 +460,7 @@ a { color: inherit; }
 }
 
 .ig-handle { font-family: var(--font-mono); font-weight: 500; font-size: 1rem; display: flex; align-items: center; gap: 6px; }
-.ig-handle i { width: 16px; height: 16px; color: var(--primary); }
+.ig-handle i, .ig-handle svg { width: 16px; height: 16px; color: var(--primary); }
 .ig-stats { color: var(--text-muted); font-size: 0.86rem; font-family: var(--font-mono); }
 
 .ig-grid {
